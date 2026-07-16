@@ -1,0 +1,118 @@
+/* Base responsive rules */
+* {
+    box-sizing: border-box;
+}
+
+/* Small phones (up to 320px) */
+@media screen and (max-width: 320px) {
+    .login-container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 4em !important;
+    }
+    
+    h2 {
+        font-size: 1.5em !important;
+    }
+    
+    .username, .password {
+        width: 90% !important;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .register, .login {
+        width: 90% !important;
+        margin: 0 !important;
+    }
+}
+
+/* Medium phones (321px - 480px) */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 6em !important;
+    }
+    
+    .username, .password {
+        width: 90% !important;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .artist_container {
+        width: 95vw !important;
+    }
+    
+    .album_table_wrap {
+        width: 90% !important;
+    }
+    
+    .tracklist {
+        width: 90% !important;
+        left: 0 !important;
+    }
+    
+    .discography {
+        justify-content: center !important;
+    }
+}
+
+/* General responsive styles */
+@media screen and (max-width: 768px) {
+    .spitify {
+        font-size: 8em !important;
+    }
+    
+    .searchbar input {
+        width: 90% !important;
+        max-width: 400px;
+    }
+    
+    .list {
+        width: 100% !important;
+        padding: 10px;
+    }
+    
+    .karta {
+        margin: 10px !important;
+    }
+    
+    .artist_table_wrap, .album_table_wrap {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+    .track {
+        width: 90% !important;
+    }
+    
+    .album_card {
+        margin: 5px !important;
+    }
+    
+    .home, .uzivatel {
+        margin: 10px !important;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .login-container {
+        transform: scale(0.8);
+    }
+    
+    .artist_container {
+        height: auto !important;
+        min-height: 100vh;
+    }
+}

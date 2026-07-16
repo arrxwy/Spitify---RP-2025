@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Dongle';
+    src: url('fonts/Dongle-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LondrinaOutline';
+    src: url('fonts/LondrinaOutline-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Londrina';
+    src: url('fonts/LondrinaSolid-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LondrinaShadow';
+    src: url('fonts/LondrinaShadow-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(34, 34, 34) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    min-height: -webkit-fill-available;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 100%;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.home {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    float: left;
+    border-radius: 50px;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(31, 31, 31) 100%);
+    box-shadow:  10px 10px 20px #1b1b1b,
+                 -10px -10px 20px #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    color: white;
+}
+
+.home:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.house {
+    font-size: 28px;
+}
+
+.user {
+    font-size: 30px;
+}
+
+.uzivatel {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    float: right;
+    border-radius: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(32, 32, 32) 100%);
+    box-shadow:  10px 10px 20px #1b1b1b,
+                 -10px -10px 20px #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    color: white;
+}
+
+.uzivatel:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.artist_container {
+    min-width: 500px;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    background: rgba(37, 37, 37, 0.05);
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.artist_table {
+    width: 100vh;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: list-item;
+}
+
+.artistpfp {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 25px 20px 20px 0px;
+}
+  
+.artist_name {
+    font-family: 'LondrinaShadow', sans-serif;
+    color: white;
+    font-size: 4em;
+    padding-top: 20px;
+}
+
+.artist_mini {
+    font-family: 'Londrina', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+    display: flex;
+}
+
+.artist_desc {
+    font-family: 'Londrina', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.artist_mini_name {
+    padding-right: 30px;
+}
+
+.artist_mini_age {
+    padding-right: 30px;
+}
+
+.spodnicara {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    opacity: 10%;
+    margin: 0px auto 0 auto;
+}
+
+.discography {
+    width: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.album_card {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-size: contain;
+    box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.25),
+    inset 0 0 4px rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+.albumcover {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+.album_card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.artist_table::marker {
+  color: transparent;
+}
+
+/* Add Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+        min-height: 100vh;
+        background: #000000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(34, 34, 34) 100%);
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .artist_container {
+        min-width: unset;
+        width: 95%;
+        height: auto;
+        min-height: 80vh;
+        margin: 10px auto;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    .artist_table {
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist_table thead {
+        width: 100%;
+    }
+
+    .artist_table tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto !important;
+    }
+
+    .artist_table td {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .artistpfp {
+        width: 150px;
+        height: 150px;
+        margin: 15px auto;
+    }
+
+    .artist_name {
+        font-size: 2.5em;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .artist_mini {
+        font-size: 16px;
+        padding: 5px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .artist_mini_name,
+    .artist_mini_age,
+    .artist_mini_place {
+        padding-right: 0;
+    }
+
+    .artist_desc {
+        margin-top: 15px;
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        position: static !important;
+    }
+
+    .discography {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .album_card {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .albumcover {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home, .uzivatel {
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .house, .user {
+        font-size: 20px;
+    }
+
+    .spodnicara {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 320px) {
+    .artist_name {
+        font-size: 2em;
+    }
+
+    .artist_mini {
+        font-size: 14px;
+    }
+
+    .artistpfp {
+        width: 120px;
+        height: 120px;
+    }
+
+    .album_card,
+    .albumcover {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .artist_container {
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .artistpfp {
+        width: 100px;
+        height: 100px;
+    }
+
+    .album_card,
+    .albumcover {
+        width: 100px;
+        height: 100px;
+    }
+}

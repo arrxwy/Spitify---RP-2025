@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Dongle';
+    src: url('fonts/Dongle-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LondrinaOutline';
+    src: url('fonts/LondrinaOutline-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Londrina';
+    src: url('fonts/LondrinaSolid-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LondrinaShadow';
+    src: url('fonts/LondrinaShadow-Regular.ttf');
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 94, 255, 0.78) 100%);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: -webkit-fill-available;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    width: 100%;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.home {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    float: left;
+    border-radius: 50px;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(31, 31, 31) 100%);
+    box-shadow:  10px 10px 20px #1b1b1b,
+                 -10px -10px 20px #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    color: white;
+}
+
+.home:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+.house {
+    font-size: 28px;
+}
+
+.user {
+    font-size: 30px;
+}
+
+.uzivatel {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    float: right;
+    border-radius: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 94, 255, 0.78) 100%);
+    box-shadow:  10px 10px 20px #011a42,
+                 -10px -10px 20px #023977;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    color: white;
+}
+
+.uzivatel:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.logout {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    float: right;
+    border-radius: 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(255, 59, 59) 100%);
+    box-shadow:  10px 10px 20px #420000,
+                 -10px -10px 20px #770000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s;
+    color: white;
+}
+
+.logout:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.artist_container {
+    min-width: 500px;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    background: rgba(37, 37, 37, 0.05);
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+}
+
+.spodnicara {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    opacity: 10%;
+    margin: 20px auto 0 auto;
+}
+
+.welcome {
+    font-family: 'LondrinaShadow', sans-serif;
+    font-size: 10em;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 40px;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s ease forwards;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.favourite {
+    font-family: 'Londrina';
+    width: 730px;
+    display: flex;
+    margin: 10px auto;
+    color: white;
+    opacity: 90%;
+}
+
+.favAlbums {
+    width: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.album_card {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-image: url(images/slimshadylp.jpg);
+    background-size: contain;
+    box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.25),
+    inset 0 0 4px rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+.album_card:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+.admin-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 94, 255, 0.78) 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Londrina', sans-serif;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.admin-button:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.admin-panel {
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 1000px;
+    position: relative;
+    top: 200px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-form input,
+.admin-form textarea {
+    padding: 10px;
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Londrina', sans-serif;
+    opacity: 70%;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+h3 {
+    color: white;
+    font-family: 'Londrina', sans-serif;
+    margin: 0;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-form button {
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 94, 255, 0.78) 100%);
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Londrina', sans-serif;
+    transition: 0.3s;
+}
+
+.admin-form button:hover {
+    transform: scale(1.05);
+}
+
+/* Add Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+        min-height: 100vh;
+        background: #000000;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 94, 255, 0.78) 100%);
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .artist_container {
+        min-width: unset;
+        width: 95%;
+        height: auto;
+        min-height: 80vh;
+        margin: 10px auto;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    .welcome {
+        font-size: 5em;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .favourite {
+        width: 90%;
+        text-align: center;
+        font-size: 2em;
+        justify-content: center;
+    }
+
+    .favAlbums {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .album_card {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .home, .uzivatel, .logout {
+        margin: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .house, .user, .logout-icon {
+        font-size: 20px;
+    }
+
+    .spodnicara {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 320px) {
+    .welcome {
+        font-size: 3.5em;
+    }
+
+    .favourite {
+        font-size: 1.5em;
+    }
+
+    .album_card {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .artist_container {
+        height: auto;
+        margin: 5px auto;
+    }
+
+    .welcome {
+        font-size: 3em;
+        padding-top: 10px;
+    }
+
+    .favAlbums {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .album_card {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+}
