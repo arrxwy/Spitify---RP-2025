@@ -15,8 +15,8 @@ Digitální katalog hudby, jakožto školní ročníková práce, inspirovaný p
 1.  Stáhněte si projekt k sobě do počítače
 2.  Spuštěte si MySQL a PHP (Homebrew)
 
-    **brew services start mysql**
-    **brew services start php**
+    - **brew services start mysql**
+    - **brew services start php**
 
 3.  Přejděte do složky **config/**, zkopírujte vzorový soubor **config.example.php** a pojmenujte kopii jako **config.php**.
 4.  Otevřete nově vytvořený soubor **config.php** a upravte přihlašovací údaje podle vašeho lokálního prostředí.
