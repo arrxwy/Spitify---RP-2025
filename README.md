@@ -4,11 +4,11 @@ Digitální katalog hudby, jakožto školní ročníková práce, inspirovaný p
 
 🛠️ Použité technologie 🛠️
 
-| **PHP 8.5.8** | Backendová logika aplikace a komunikace s databází|
-| **MySQL a MariaDB** | Relační databáze pro ukládání dat |
-| **PDO (PHP Data Objects)** | Bezpečné připojení k databázi |
-| **HTML5 & CSS3** | Struktura a moderní responzivní vzhled webu |
-| **JavaScript** | Interaktivní detaily |
+- **PHP 8.5.8** | Backendová logika aplikace a komunikace s databází
+- **MySQL a MariaDB** | Relační databáze pro ukládání dat
+- **PDO (PHP Data Objects)** | Bezpečné připojení k databázi
+- **HTML5 & CSS3** | Struktura a moderní responzivní vzhled webu
+- **JavaScript** | Interaktivní detaily
 
 🚀 Rychlé zprovoznění lokálně
 
